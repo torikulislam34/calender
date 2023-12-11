@@ -7,6 +7,7 @@ body{
     background-color: #dfe6d9;
 }
 .container{
+    margin-top: 70px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -70,4 +71,65 @@ body{
 
 .month .arrow:hover{
     background-color: #008184;
+}
+
+.container .week{
+    display: flex;
+    background-color: #016d6f;
+    color: #fff;
+}
+.week div{
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0px;
+    transition: 0.4s;
+}
+.week .active{
+    background-color: #005758;
+}
+.week div:hover{
+    background-color: #005758;
+}
+.container .dates{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.dates div{
+    width: 74px;
+    height: 55px;
+    margin: 2px;
+    text-align: center;
+    line-height: 53px;
+    border: 3px solid #e9e9e9;
+}
+.dates .today{
+    background-color: #008184;
+    color: #fff;
+}
+.dates .today:hover{
+    background-color: #016d6f;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.dates div:hover:not(.today){
+    border: 3px dashed #111;
+    background-color: #f0f0f0;
+    color: #008184;
+    font-size: 600;
+    cursor: pointer;
+    -webkit-box-reflect: below 4px linear-gradient(transparent, #0000004d);
+}
+.dates div:nth-child(n+16):hover{
+    -webkit-box-reflect: below 4px linear-gradient(transparent, #0000004d);
+}
+/* .calendar .dates div:nth-child(n+43){
+    border: none !important;
+    cursor: none !important;
+    background: none 1;
+} */
+.dates .prev:hover,
+.dates .next:hover{
+    opacity: 1;
 }

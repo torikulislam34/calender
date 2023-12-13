@@ -19,6 +19,7 @@ body{
     background-color: #fff;
     box-shadow: 0px, 0px, 15px, 3px  rgba(0, 0, 0, 2);
     font-family: "Roboto", sans-serif;
+    overflow: hidden;
 }
 .container .clock{
     position: absolute;
@@ -124,11 +125,11 @@ body{
 .dates div:nth-child(n+16):hover{
     -webkit-box-reflect: below 4px linear-gradient(transparent, #0000004d);
 }
-/* .calendar .dates div:nth-child(n+43){
+.calendar .dates div:nth-child(n+43){
     border: none !important;
     cursor: none !important;
     background: none 1;
-} */
+}
 .dates .prev:hover,
 .dates .next:hover{
     opacity: 1;
